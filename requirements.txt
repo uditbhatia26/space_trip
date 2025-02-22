@@ -7,3 +7,8 @@ langchain-openai
 langchain-huggingface
 faiss-cpu
 python-dotenv
+tiktoken
+chromadb
+numpy
+torch
+sentence-transformers
