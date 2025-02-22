@@ -1,0 +1,85 @@
+# Creating a sample space-related dataset in .txt format
+
+dataset_content = """
+### General Space Knowledge ###
+Q: What is the closest planet to Earth?
+A: Venus is the closest planet to Earth in terms of proximity, but the closest planet varies depending on orbital positions.
+
+Q: How long does it take to travel to Mars?
+A: A typical journey to Mars takes about 6-9 months using current propulsion technology.
+
+Q: What is the escape velocity of Earth?
+A: Earth's escape velocity is approximately 11.2 km/s.
+
+Q: What are Lagrange Points?
+A: Lagrange Points are positions in space where the gravitational forces of two large bodies, such as the Earth and Moon, balance the centripetal force of a smaller object.
+
+### Interplanetary Mission Planning ###
+Q: How much fuel is required for a Mars mission?
+A: A Mars mission typically requires 500-700 tons of fuel, depending on the payload and propulsion technology.
+
+Q: What is the optimal launch window for a trip to Jupiter?
+A: Jupiter transfer windows occur approximately every 13 months when Earth and Jupiter are properly aligned.
+
+Q: How much does it cost to send 1kg of payload to the Moon?
+A: The estimated cost to send 1kg to the Moon is around $1.2M using current rocket technology.
+
+Q: What is the travel time to Titan?
+A: A mission to Saturn's moon Titan typically takes 6-7 years using traditional propulsion methods.
+
+### Edge Cases and Anomaly Handling ###
+Q: What happens if a spacecraft runs out of fuel mid-mission?
+A: The spacecraft will either drift in space or require assistance from onboard ion thrusters or gravity assist maneuvers.
+
+Q: How does radiation affect astronauts on long missions?
+A: Prolonged exposure to cosmic radiation increases the risk of cancer and neurological damage; radiation shielding is crucial.
+
+Q: What if communication with the spacecraft is lost?
+A: Most spacecraft are programmed with an autonomous recovery mode to re-establish contact.
+
+### Sample Space Itinerary Data ###
+Mission: Human Expedition to Mars
+- Destination: Mars
+- Payload: 1000kg (including food, water, and scientific instruments)
+- Budget: $4.5B
+- Fuel Required: 600 tons
+- Travel Duration: 9 months
+- Challenges: Radiation exposure, psychological stress, fuel constraints
+- Backup Plan: Emergency return capsule with ion propulsion
+
+Mission: Robotic Exploration of Europa
+- Destination: Jupiter’s moon Europa
+- Payload: 500kg (AI-driven rover + instruments)
+- Budget: $1.8B
+- Fuel Required: 450 tons
+- Travel Duration: 6 years
+- Challenges: Extreme cold, high radiation from Jupiter
+- Backup Plan: Autonomous AI system with pre-programmed tasks
+
+Mission: Budget-Friendly Lunar Mining
+- Destination: Moon
+- Payload: 2000kg (Mining equipment + return module)
+- Budget: $800M
+- Fuel Required: 300 tons
+- Travel Duration: 3 days
+- Challenges: Dust accumulation, limited solar power
+- Backup Plan: Nuclear battery for backup power
+
+Mission: Deep Space Probe to Proxima Centauri (Edge Case)
+- Destination: Proxima Centauri (nearest star system)
+- Payload: 50kg (Scientific instruments)
+- Budget: $10B
+- Fuel Required: Light sail propulsion
+- Travel Duration: 20+ years
+- Challenges: Extreme distances, onboard AI autonomy, delayed communications
+- Backup Plan: AI-driven decision-making
+
+"""
+
+# Save the dataset as a .txt file
+file_path = "/mnt/data/space_mission_dataset.txt"
+with open(file_path, "w") as file:
+    file.write(dataset_content)
+
+# Return the file path for download
+file_path
